@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<head>
+<title> CONFIRM BOOKIG PAGE </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+body{
+background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://cdn.pixabay.com/photo/2016/07/29/19/19/gleise-1555348__340.jpg);
+height: 70vh;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.booking-page{
+        width:700px;
+        padding: 8% 0 0;
+        margin:auto;
+    }
+ .form{
+        z-index: 1;
+        background: rgba(101,127,140,0.8);
+        border-radius: 5%;
+        max-width: 1060px;
+        margin: 0 auto 100px;
+        padding: 45px;
+        text-align: left;
+
+    * {box-sizing: border-box;}
+
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: 2px solid #e7e7e7;
+  color: white;
+  padding: 12px;
+width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #000;
+transition: ease 0.8s;
+}
+
+
+
+
+</style>
+</head>
+
+
+<body>
+
+<div class="booking-page">
+    <div class="form">
+        <form class="book-form">
+        <span style="text-align: center",style="font-family:bold"><h1>SAFETY|SECURITY|PUNCTUALITY</h1></span>
+        <p style="align:left"> PLEASE FILL IN THE BELOW DETAILS TO PROCEED FURTHER IN YOUR BOOKING PROCEDURE.<br></p>
+<br>
+
+
+<form action="/action_page.php" >
+
+<br>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+        <h2><left> PERSONAL INFO. </left> <h2>
+<br>
+        <div class="row">
+          <div class="col-75">
+           
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="abc xyz">
+
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="abc@example.com">
+            
+           <label for="adr"><i class="fa fa-home"></i> Current Address</label>
+            <input type="text" id="adr" name="address" placeholder="H.No,City,State,Pincode">
+
+            <label for="adr"><i class="fa fa-map-marker"></i>From</label>
+            <input type="text" id="adr" name="address" placeholder="City,State,Pincode">
+
+             <label for="adr"><i class="fa fa-map-marker"></i>To</label>
+            <input type="text" id="adr" name="address" placeholder="City,State,Pincode">
+
+            <label for="city"><i class="fa fa-train icon"></i> Train-Route/No.</label>
+           <input type="text" id="state" name="state" placeholder="Eg:Delhi-Mumbai/xxxxxx">
+
+            <label for="city"><i class="fa fa-user"></i>Passengers</label>
+           <input type="text" id="city" name="city" placeholder="01">
+             
+            <label for="zip"><i class="fa fa-calendar icon"></i> Departure Date</label>
+            <input type="text" id="zip" name="zip" placeholder="e.g. 17/08/2020">
+              </div>
+            </div>
+          
+<br> <br>
+
+             <h3><left><b>Payment</b></left></h3>
+
+<div class="col-50">
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+           
+          
+            <label for="ddate">Card Holder Name</label>
+            <input type="text" id="ddate" name="departuredate" placeholder="abc xyz">
+
+            <label for="adate">Card Number</label>
+            <input type="text" id="adate" name="arrivaldate" placeholder="xxx-xxx-xxxx-xxxx">
+            
+            <label for="expmonth">Expiration Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+            <label for="cvv">CVV</label>
+           <input type="text" id="cvv" name="cvv" placeholder="123">
+           
+          
+          </div>
+
+
+<label> 
+<input type="checkbox" id="myCheck" onclick="myFunction()"> Information entered by me is true and correct.
+</label> 
+<p id="text" style="display:none">Click on Confirm Booking button below to finish booking.</p>
+
+<script>
+function myFunction() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+
+ 
+        
+
+
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+  </div>
+</div>
+
+<input type="button" class="button" value="Confirm Booking" onclick="myFunction1()">
+
+<script>
+function myFunction1() {
+  confirm("Your ticket has been confirmed.\nYou will receive your ticket via e-mail and text message.\n\nThank You for booking with us. For more bookings visit our official wepage.");
+}
+</script>
+
+
+</body>
+</html>

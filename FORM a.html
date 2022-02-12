@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+background: linear-gradient(-25deg,#1e9600,#005AA7,#FFFDE4) no-repeat center fixed; 
+  background-size: cover;
+    }
+   
+   
+h1{ border:solid;
+   border-radius: 10px;
+    background-color: black; 
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+font-size:44p;
+color:aqua;
+}
+input{ 
+
+border-radius:100px;
+width:100px;
+height:20px;
+text-indent:5px;
+}
+
+fieldset{ 
+ 
+    font-family: cursive;
+    background-image:  linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)),url('https://ae01.alicdn.com/kf/HTB19nTkJpXXXXXYXFXXq6xXFXXX8/225547656/HTB19nTkJpXXXXXYXFXXq6xXFXXX8.jpg');
+width:50%;
+height:75vh;
+background-size:cover;
+background-position:center;
+border-radius:5px;
+outline:none;
+        color:white;
+}
+</style>
+</head>
+<body>
+   <center><h1>BOOK YOUR TICKET</h1></center>
+<center>
+<form action= target="_self">
+<fieldset>
+<label for="from">From:
+  </label>
+  <select id="from1" name="From">
+    <option value="Delhi">Delhi</option></select>
+ <label for="To">To:</label>
+  <select id="To1	" name="To">
+    <option value="Kolkata">Kolkata</option>
+    <option value="Bangalore">Bangalore</option>
+    <option value="Ajmer">Ajmer</option>
+    <option value="Mumbai">Mumbai</option>
+	<option value="Chennai">Chennai</option>
+  </select><br>
+  <br>
+  <label for="Departure Date">Departure Date:<br></label>
+  <input type="date" id="departure date1" name="departure date">
+  <p>Please select the class in which you want to travel:</p>
+  <input type="radio" id="1st" name="classes" value="1st">
+  <label for="1st">1st</label><br>
+  <input type="radio" id="2nd" name="classes" value="2nd">
+  <label for="2nd">2nd</label><br>
+  <input type="radio" id="3rd" name="classes" value="3rd">
+  <label for="3rd">3rd</label><br>
+
+  <br>  
+
+  <p>AC/NON-AC</p>
+  <input type="radio" id="ac" name="ac/non-ac" value="ac" >
+  <label for="ac">AC</label>
+  <input type="radio" id="non-ac" name="ac/non-ac"value="non-ac" >
+  <label for="non-ac">NON-AC</label> <br>
+  <input type="submit" value="Submit">
+</fieldset>
+</form>
+</center>
+</body>
+</html>
